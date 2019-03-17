@@ -1,0 +1,154 @@
+body { 
+   font-family: "Helvetica Neue",Arial,sans-serif;
+   font-size: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: lightgreen;
+
+}
+
+h1, h2, h3, h4 { 
+   margin: 0;
+   padding: 0;
+   font-size: 20;
+   text-align: left;
+   
+}
+p {
+  color: 0000;
+  text-align: left: 0 28px; 
+  margin-right: 0 78px;
+}
+span {
+   font-weight:normal;
+}
+img {
+   display: inline;
+}
+a {
+   text-decoration: none;
+}
+
+.clear {
+   overflow: auto;
+}
+
+.content{
+   margin: 0 28px 0 28px;
+   margin: 0 28px;
+} 
+
+.container p {
+   color: #000;
+   font-size: 14px;
+   margin-right: 48px 0;
+
+}
+
+.container h1 {
+   color: orange;
+   font-size: 28px;
+   margin: 10px 0;
+   margin-right: 40px 0;
+}
+.container h2 {
+   color: orange;
+   font-size: 28px;
+   margin: 10px 0;
+   margin-right: 40px 0;
+}
+
+.container h3 {
+   color: orange;
+   font-size: 28px;
+   margin: 10px 0;
+   margin-right: 40px 0
+}
+
+.container h4 {
+   color: orange;
+   font-size: 28px;
+   margin: 10px 0;
+   margin-right: 40px 0
+}
+.row-box {
+   position: relative;
+   display: block;
+   width: 100%;
+   clear: left;
+}
+.col {
+   float: left;
+   width: 50%;
+}
+
+#nav {
+   display: block;
+   position: relative;
+   margin-bottom: 40px; 
+   color: #373a3c;
+}
+#nav .logo { 
+   float: left; 
+}
+#nav .nav-list { 
+   float: right;
+   font-weight: bold;
+   font-size: 14px;
+}
+#nav .nav-list a { 
+   color: #00001;
+}
+ul.navbar {
+   display: block;
+   text-align: right;
+   margin: 15% 0 0 0;
+}
+.navbar li {
+   font-size: 16px;
+   display: inline;
+   margin-right: 23px;
+}
+.TheVeganDiet {
+  color: #07aeda;
+  text-decoration: none;
+}
+.Whatisit {
+   color: #07aeda;
+  text-decoration: none;
+}
+.Plant-base {
+   color: #07aeda;
+  text-decoration: none;  
+}
+.DifferentTypes {
+  color: #07aeda;
+  text-decoration: none;  
+}
+}
+footer {
+   background-color: #444;
+   color: gray;
+   margin-top: 5%;
+   padding: 5% 0;
+   text-align: center;
+}
+footer a,
+footer a:link,
+footer a:visited,
+footer a:active {
+   color: #fff;
+}
+
+@media (max-width: 720px) {
+   .banner h1 {
+      font-size: 32px;
+      transition: font 3s ease;
+   }
+}
+@media (min-width: 960px) {
+   .banner h1 {
+      font-size: 60px;
+      transition: font 5s ease;
+   }
+}
