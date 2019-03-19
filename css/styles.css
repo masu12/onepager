@@ -3,8 +3,7 @@ body {
    font-size: 1rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    background-color: lightgreen;
-
+    background-color: orange;
 }
 
 h1, h2, h3, h4 { 
@@ -12,8 +11,8 @@ h1, h2, h3, h4 {
    padding: 0;
    font-size: 20;
    text-align: left;
-   
 }
+
 p {
   color: 0000;
   text-align: left: 0 28px; 
@@ -42,31 +41,30 @@ a {
    color: #000;
    font-size: 14px;
    margin-right: 48px 0;
-
 }
 
 .container h1 {
-   color: orange;
+   color: green;
    font-size: 28px;
    margin: 10px 0;
    margin-right: 40px 0;
 }
 .container h2 {
-   color: orange;
+   color: green;
    font-size: 28px;
    margin: 10px 0;
    margin-right: 40px 0;
 }
 
 .container h3 {
-   color: orange;
+   color: green;
    font-size: 28px;
    margin: 10px 0;
    margin-right: 40px 0
 }
 
 .container h4 {
-   color: orange;
+   color: green;
    font-size: 28px;
    margin: 10px 0;
    margin-right: 40px 0
@@ -109,23 +107,13 @@ ul.navbar {
    display: inline;
    margin-right: 23px;
 }
-.TheVeganDiet {
+/* Styling for HTML contact box */
+#contact a {
   color: #07aeda;
   text-decoration: none;
 }
-.Whatisit {
-   color: #07aeda;
-  text-decoration: none;
-}
-.Plant-base {
-   color: #07aeda;
-  text-decoration: none;  
-}
-.DifferentTypes {
-  color: #07aeda;
-  text-decoration: none;  
-}
-}
+
+/* Footer HTML5 */
 footer {
    background-color: #444;
    color: gray;
@@ -144,10 +132,52 @@ footer a:active {
    .banner h1 {
       font-size: 32px;
       transition: font 3s ease;
-   }
+}
 }
 @media (min-width: 960px) {
    .banner h1 {
+      font-size: 60px;
+      transition: font 5s ease;
+   }
+}
+
+.Thevegandiet {
+  color: #07aeda;
+  text-decoration: none;
+}
+.Whatisit {
+   color: #07aeda;
+  text-decoration: none;
+}
+.Plant-base {
+   color: #07aeda;
+  text-decoration: none;  
+}
+.Differenttypes {
+  color: #07aeda;
+  text-decoration: none;  
+}
+footer {
+   background-color: #444;
+   color: gray;
+   margin-top: 5%;
+   padding: 5% 0;
+   text-align: center;
+}
+footer a,
+footer a:link,
+footer a:visited,
+footer a:active {
+   color: #fff;
+}
+@media (max-width: 720px) {
+   .banner h1, h2, h3, h4 {
+      font-size: 32px;
+      transition: font 3s ease;
+   }
+}
+@media (min-width: 960px) {
+   .banner h1, h2, h3, h4 {
       font-size: 60px;
       transition: font 5s ease;
    }
