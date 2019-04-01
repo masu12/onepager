@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <title>ONE SITE PAGER</title>
+       <link rel="stylesheet" href="css/styles.css" />
+   </head>
+  <!--Health--> 
+  <body> 
+   <div class="main content">
+     <div id="nav" class="clear">
+        <div class="logo-vegan"><img src="img/logo-vegan.png" alt="logo-vegan"></div>
+          
+          <div class="nav-list">
+          <ul class="navbar">   
+          <li><a href="#TheVegandiet">Thevegandiet</a></li>
+          <li><a href="#Whatisit?">Whatisit?</a></li>
+          <li><a href="#Plant-base">Plant-base</a></li>
+          <li><a href="#Differenttypes">Differenttypes</a></li>
+        </ul>
+    </div>
+    </div> 
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img class="thumbnail" src="img/thumbnail4.jpg" alt="thumbnail4" style="width:100%">
+</div>
+</div>
+  
+<div class="mySlides fade">
+<div class="numbertext">2 / 3</div>
+<img class="thumbnail" src="img/thumbnail5.jpg" alt="thumbnail5" style="width:100%">
+<div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 3</div>
+<img class="thumbnail" src="img/thumbnail6.jpg" alt="thumbnail6" style="width:100%">
+<div class="text">Caption Three</div>
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script> 
+
+
+
+
+
+
+
+<div class="footer">
+  <div id="contact" class="container">
+  <h6>CONTACT US</h6>
+  <address>1111 Main Ave.<br>New York, NY 10000</address>
+  <p><a href="mailto:someone@domain.com?Subject=The%20Vegan%20Diet">someone@yahoo.com</a><br>
+  <a href="Tel:+1-555-222-8888">+1-555-222-8888</a></p>
+  </div>
+</div>
+</div>
+</body>
+</html>
