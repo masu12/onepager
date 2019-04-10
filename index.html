@@ -1,138 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <title>ONE SITE PAGER</title>
-       <link rel="stylesheet" href="css/styles.css" />
-   </head>
-  <!--Health--> 
-   <div class="main content">
-     <div id="nav" class="clear">
-        <div class="logo-vegan"><img src="img/logo-vegan.png" alt="logo-vegan"></div>
-          
+<head>
+  <meta charset="UTF-8">
+  <meta content="Creating a slideshow" name="description">
+  <meta content="HTML,CSS" name="keywords">
+  <meta content="Maribel Royer" name="author"><!-- Responsive Design tag -->
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Image Slideshow: One Site Pager</title>
+  <link href="favicon.ico" rel="icon" type="image/x-icon"><!-- External CSS styles -->
+  <link href="css/styles.css" rel="stylesheet"><!-- CSS for slideshow -->
+  <link href="css/slick.css" rel="stylesheet" type="text/css"><!-- Add the new slick-theme.css if you want the default styling -->
+  <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+  
+  <!--To test my slideshow styles on my other pages:
+  <style type="text/css">
+
+     .slideshow-wrap {
+         background-color: #444; 
+         padding: 10px 30px;
+         cursor: pointer;
+     }
+        /*Method  
+     .slick-prev:before, .slick-next:before {
+         font-size: 50px;
+     }
+         .slick-prev, .slick-next {
+             z-index: 999;
+             background-color: black;
+             width: 50px;
+             height: 50px;
+         }
+         .slick-prev { left: 0; }
+         .slick-next { right: 0; }
+       */
+  </style>
+-->
+  <script type="text/javascript" src="js/main.js"></script> 
+</head>
+  
+  <body id="home">
+     <div class="main content">
+      <div id="nav" class="clear">
+        <div class="logo">
+          <a href="veganlifecoach"><img src="img/logo-vegan.png" alt="logo-vegan"></a>
+          </div>
           <div class="nav-list">
-          <ul class="navbar">   
+            <ul id="navbarUL" class="navbar">
+            <ul class="navbar">   
           <li><a href="#TheVegandiet">Thevegandiet</a></li>
           <li><a href="#Whatisit?">Whatisit?</a></li>
           <li><a href="#Plant-base">Plant-base</a></li>
           <li><a href="#Differenttypes">Differenttypes</a></li>
-        </ul>
+          </ul>
     </div>
-    </div> 
-
-<div class="slideshow-container">
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img class="thumbnail" src="img/thumbnail1.jpg" alt="thumbnail1" style="width:100%">
-</div>
-
+  </div> 
+<!--To test my slideshow on my other pages:
+<div class="slideshow-wrap">
+    <div class="yummy-food">
+      <div><img alt="thumbnail 1" src="img/thumbnail1.jpg"></div>
+      <div><img alt="thumbnail 2" src="img/thumbnail2.jpg"></div>
+      <div><img alt="thumbnail 3" src="img/thumbnail3.jpg"></div>
+      <div><img alt="thumbnail 4" src="img/thumbnail4.jpg"></div>
+      <div><img alt="thumbnail 5" src="img/thumbnail5.jpg"></div>
+      <div><img alt="thumbnail 6" src="img/thumbnail6.jpg"></div>
+    </div>
+  </div> -->
   
-<div class="mySlides fade">
-<div class="numbertext">2 / 3</div>
-<img class="thumbnail" src="img/thumbnail2.jpg" alt="thumbnail2" style="width:100%">
-<div class="text">Caption Two</div>
-</div>
-
-
-<div class="mySlides fade">
-<div class="numbertext">3 / 3</div>
-<img class="thumbnail" src="img/thumbnail3.jpg" alt="thumbnail3" style="width:100%">
-<div class="text">Caption Three</div>
-</div>
-<br>
-
-<div style="text-align:center">
-<span class="dot"></span> 
-<span class="dot"></span> 
-<span class="dot"></span> 
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script> 
-   
-<div id="TheVegandiet" class="container">
-<h1>Cooking Ideas</h1><a href="https://itdoesnttastelikechicken.com/50-easy-vegan-recipes-for-beginners/" target="_blank"><br>For easy vegan recipes:click here</a>
-</div>
-</div>
-
-<div class="header">
-<div id="Vegandiet?" class="container">
-<h2>The Vegan Diet</h2>
-<p>Researches have shown that  a vegan diet can help do the following: Promote weight loss. Reduce your risk of heart disease by lowering cholesterol levels. Lower your chances of getting certain types of cancer, such as colon cancer.
-<a href="https://www.rush.edu/health-wellness/discover-health/health-benefits-vegan-diet">Health</a></p></div>
-</div>
-
-<body>
-<div class="row">
-<div id="Whatisit?" class="container">
-<div class="column" style="background-color:#9999;">
-<h3>What is it?</h3>
-<p>Veganism is defined as a way of living that attempts to exclude all forms of animal exploitation and cruelty, whether for food, clothing or any other purpose.
-For these reasons, the vegan diet is devoid of all animal products, including meat, eggs and dairy.
-People choose to follow a vegan diet for various reasons.
-These usually range from ethics to environmental concerns, but they can also stem from a desire to improve health.</p>
-<p><strong>Note:</strong> There are many different types of vegan diets</p></div>
-</div>
-</div>
   
-<div class="column" style="background-color: #3131;">
-<div id="Plant-base" class="container">
-<h4>Plant-base or non-animal protein</h4>
-<p>There are many diferent foods that contein protein without having to eat meat. As we age, protein is important for keeping up muscle mass to stay active, avoid injury, and support a healthy immune system.
-Choosing non-meat proteins in later years can be a good idea for more than just health or ethical reasons. “Many non-meat protein sources are lower in cost, and if you’re on a fixed income, then watching the food budget can be helpful,” says Angela Catic, MD, an assistant professor of internal medicine at Baylor College of Medicine.
-Dental problems like missing teeth and dentures can come into play, too -- making a piece of steak or hamburger hard to chew. But there are plenty of ways to get protein besides meat, such as Soy milk, almond milk, beans, tofu, nuts, whole grains. You just need to know what you’re looking for.<a href="C:/MAMP/htdocs/onepager/cookingideas.html" target="_blank"><br>
-For cooking tips:click here</a></p>
+    <div class="image-container">
+      <div class="cssBackgroundImages bgVegetables" id="csscoverbackgroundimage">
+          <div class="container">
+            <div class="text">
+              <h2>It's easy to go</h2>
+              <p><span>Vegan</span><br>
+              A personal Vegan Lifecoach!</p>
+              <p><a href="veganlifecoach.html" target="_blank"><br>
+            Want to go Vegan:click here</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <hr>
+
+  <div id="blog" class="container">
+  <h1>Why Vegan?</h1>
+  <div class="block-content clear">
+    <style type="text/css">
+      </style>
+        <div id="blogPost">
+          <div class="blogContainer clear">
+            <div class="summary">
+              <div class="item">
+                <a href="veganlifecoach.html"><img src="img/vegandish3.jpg"></a>
+                <div class="date-holder">
+                  <div class="date-inner">
+                    <span class="date-day">27</span> <span class="date-month">Feb</span>
+                  </div>
+                </div>
+              </div>
+              <p class="lead">The Vegan Diet</p>
+              <p class="blogDetail">Researches have shown that a vegan diet can help do the following: Promote weight loss. Reduce your risk of heart disease by lowering cholesterol levels. Lower your chances of getting certain types of cancer, such as colon cancer</p>
+              <p><a href="veganlifecoach.html" target="_blank">read more</a></p>
+            </div>
+          </div>
+          <div class="summary">
+            <div class="item">
+              <img src="img/lettuceeat.jpeg">
+              <div class="date-holder">
+                <div class="date-inner">
+                  <span class="date-day">4</span> <span class="date-month">Apr</span>
+                </div>
+              </div>
+            </div>
+            <p class="lead">What is it?</p>
+            <p class="blogDetail">Veganism is defined as a way of living that attempts to exclude all forms of animalexploitation and cruelty, whether for food, clothing or any other purpose.</p>
+            <p><a href="veganlifecoach.html" target="_blank">read more</a></p>
+          </div>
+          <div class="summary">
+            <div class="item">
+              <img src="img/rawvegan.jpg">
+              <div class="date-holder">
+                <div class="date-inner">
+                  <span class="date-day">19</span> <span class="date-month">Jun</span>
+                </div>
+              </div>
+            </div>
+            <p class="lead">Plant-base or non-animal protein</p>
+            <p class="blogDetail">There are many diferent foods that contein protein without having to eat meat. As we age, protein is important for keeping up muscle mass to stay active, avoid injury, and support a healthy immune system.</p>
+            <p><a href="veganlifecoach.html" target="_blank">read more</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+      <div id="contact" class="container">
+      <h2>CONTACT US</h2>
+      <address>8800 22nd St. Apt.6<br>New York, NY 10019</address>
+      <a href="mailto:someone@domain.com?Subject=The%20Vegan%20Diet">someone1111@yahoo.com</a><br>
+      <a href="Tel:+1-555-222-8888">+1-555-222-8888</a>  
+      </div>
+    </div>
   </div>
- </div>
-  
-<div class="column" style="background-color:#ccc;">
-<div id="DifferentTypes" class="container">
-<h5>Different Types of Vegan Diets</h5>        
-<p>I am under a Whole-food vegan diet. Though acording to these articles, there are different varieties of vegan diets. The most common include:
-Whole-food vegan diet: A diet based on a wide variety of whole plant foods such as fruits, vegetables, whole grains, legumes, nuts and seeds.
-Raw-food vegan diet: A vegan diet based on raw fruits, vegetables, nuts, seeds or plant foods cooked at temperatures below 118°F (48°C) (1).
-80/10/10: The 80/10/10 diet is a raw-food vegan diet that limits fat-rich plants such as nuts and avocados and relies mainly on raw fruits and soft greens instead. Also referred to as the low-fat, raw-food vegan diet or fruitarian diet.
-The starch solution: A low-fat, high-carb vegan diet similar to the 80/10/10 but that focuses on cooked starches like potatoes, rice and corn instead of fruit.
-Raw till 4: A low-fat vegan diet inspired by the 80/10/10 and starch solution. Raw foods are consumed until 4 p.m., with the option of a cooked plant-based meal for dinner.
-The thrive diet: The thrive diet is a raw-food vegan diet. Followers eat plant-based, whole foods that are raw or minimally cooked at low temperatures.
-Junk-food vegan diet: A vegan diet lacking in whole plant foods that relies heavily on mock meats and cheeses, fries, vegan desserts and other heavily processed vegan foods.
-Although several variations of the vegan diet exist, most scientific research rarely differentiates between different types of vegan diets.
-Therefore, the information provided in this article relates to vegan diets as a whole.
-<a href="C:/MAMP/htdocs/onepager/mistakestoavoid.html" target="_blank">For more details:Click here</a>
-</p>
-<div class="image-container">
-<img  class="vegetables" src="img/vegetables.jpg" alt="vegetables">
-</div>
-</div>
-</div>
 
-<div class="footer">
-  <div id="contact" class="container">
-  <h6>CONTACT US</h6>
-  <address>1111 Main Ave.<br>New York, NY 10000</address>
-  <p><a href="mailto:someone@domain.com?Subject=The%20Vegan%20Diet">someone@yahoo.com</a><br>
-  <a href="Tel:+1-555-222-8888">+1-555-222-8888</a></p>
-  </div>
-</div>
-</div>
+      <footer class="footer">
+    <p>Copyright &copy;&nbsp;2019</p>
+    <p class="socialmedia"><i class="fab fa-facebook"></i></p>
+    <a href="table-2.html">Table 2</a> | <a href="float.html">Float</a> | <a href="embed.html">Embed</a>
+  </footer>
+
+<!-- To test my slideshow javascript my other pages:
+       <script src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript">
+    </script> 
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript">
+    </script> 
+    <script src="js/slick.min.js" type="text/javascript">
+    </script> 
+    <script type="text/javascript">
+        $(document).ready(function(){
+          // Single Item
+          /*$('.yummy-food').slick();
+          $('.yummy-food').slick({
+            infinite: true,
+            arrows: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
+        */
+        $('.yummy-food').slick({
+          dots: true,
+          infinite: false,
+          arrows: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+                
+          /*
+            $('.yummy-food').slick({
+              setting-name: setting-value
+            });
+          */
+        });
+      </script>
+    -->
+  </div> 
 </body>
 </html>
