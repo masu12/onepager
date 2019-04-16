@@ -1,15 +1,15 @@
 /*Blog container*/
 .blogContainer { position: relative; }
         .blogContainer .summary {
-            float: center;
+            float: left;
             width: 30%;
             margin-right: 10px;
-            }        }
+            }       
 
-        .blogContainer .summary img {
-            width: 100%;
-            position: inline;
+        .blogContainer .summary .item img { 
+            width: 50%; 
         }
+        
         .blogContainer .summary .item {
             position: relative;
         }
@@ -32,17 +32,19 @@
             color: green;
             font-size: 20px;
             font-weight: bold;
-
-
         }
+        
         .blogContainer .summary .blogDetail {
-            margin-top: 21px;
-            padding-top: 21px;
-            border-top: 1px dashed #e5e5e5;
-            font-weight: 600;
-            color: green;
-            font-size: 14px;
-        }
+        margin-top: 21px;
+        padding-top: 21px;
+        border-top: 1px dashed #e5e5e5;
+        border-top-width: 1px;
+        border-top-style: dashed;
+        border-top-color: rgb(229, 229, 229);
+        font-weight: 600;
+        color: green;
+        font-size: 14px;
+    }
 
     body { 
     font-family: "Helvetica Neue",Arial,sans-serif;
@@ -69,9 +71,6 @@
     font-size: 14px;
     }
 
-img {
-    display: inline;
-}
 a {
     text-decoration: none;
 }
@@ -162,12 +161,10 @@ ul.navbar {
     width: 36%;
     margin-right: 5%;
 }
-.blog-content .image-container img {
-    width: 100%;
-}
+
 .blog-content .post-container {
     float: left;
-    width: 40%;
+    width:40%;
 }
 
 .blog-content .post-container p{
@@ -211,7 +208,7 @@ table.table-content img {
     background-image: url(../img/veganfruitsalad.jpg);
 }
 
-.cssBackgroundImages.bgDish1 {
+.cssBackgroundImages.vgDish1 {
     background-size: cover;
     background-image: url(../img/vegandish1.jpg);
 }
