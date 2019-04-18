@@ -3,13 +3,14 @@
 */
 
 var navbar = {
+	/* attr: value */
 	home: {
 		"url": "index.html",
 		"heading": "Home"
 	},
 	about: {
 		"url": "about.html",
-		"heading": "About Me"
+		"heading": "Who Are We"
 	},
 	blog: {
 		"url": "blog.html",
@@ -42,15 +43,33 @@ function navigationBar(pageID){
 		for (var n in navbar) {
 			console.log('enter for navbar', l, n, navbar[n]);
 			document.getElementById("navbarUL").appendChild(document.createElement('li')).setAttribute('class', 'item');
+
 			var navHTML;
-			if(pageID === "home") {
-				navHTML = '<a href="'+navbar["home"].url+'#'+n+'">'+navbar[n].heading+'</a>';
+			createAnchor = document.createElement('a');
+			createAnchor.innerHTML = navbar[n].heading;
+
+			if(pageID === n) {
+				//navHTML = '<a href="'+navbar["home"].url+'#'+n+'">'+navbar[n].heading+'</a>';
+				/*if (n !== pageID) {
+					createAnchor.setAttribute('href', navbar[pageID].url+'#'+n);
+					navHTML = createAnchor;					
+				} else {
+					createAnchor.setAttribute('style', "display: none");
+					navHTML = createAnchor;
+				}*/
+				createAnchor.setAttribute('href', navbar[pageID].url+'#'+n);
+				navHTML = createAnchor;
 			} else {
-				navHTML = '<a href="'+navbar[n].url+'">'+navbar[n].heading+'</a>';
+				//navHTML = '<a href="'+navbar[n].url+'">'+navbar[n].heading+'</a>';
+				createAnchor.setAttribute('href', navbar[n].url);
+				navHTML = createAnchor;
 			}
-			document.getElementsByTagName("li")[l].innerHTML = navHTML;
-			l++;
-			console.log('l',l);
+			//document.getElementsByTagName("li")[l].innerHTML = navHTML;
+			if (n !== pageID) {
+				document.getElementsByTagName("li")[l].appendChild(navHTML);
+				l++;
+				console.log('l',l);
+			}
 		}
 	} else {
 		console.log('error');
