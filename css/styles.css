@@ -1,4 +1,4 @@
-0/*Blog container*/
+/*Blog container*/
 .blogContainer { position: relative; }
         .blogContainer .summary {
             float: left;
@@ -7,8 +7,11 @@
             }       
 
         .blogContainer .summary .item img { 
-            width: 50%; 
+            width: 100%;
+        }.blogContainer .summary .item h1 {
+            text-decoration-color: green
         }
+
         
         .blogContainer .summary .item {
             position: relative;
@@ -55,19 +58,52 @@
     background-size: cover;
     margin: 0;
     padding: 0;
+    padding-color:orange;
 }
 
 *{
   box-sizing: border-box;
 }
 
+.jumbotronText-center .summary .item h1 {
+    text-decoration-color: green
+   }
+
+.jumbotronText-center .summary{
+ background-color: orange;
+}
+
+/* to test background image on the bottom
+.cssBackgroundImages .bottom {
+    background-size: cover;
+    background-image: url(../img/8-high-protein-vegan-sources.jpg); 
+*/
+
+.col-sm-4 .summary  {
+background-color: orange;
+}
+
+.col-sm-4 .summary .item h2 {
+    text-decoration-color: green;
+
+}
+
+.columnsBottom .summary {
+    float: left;
+}
+
+.columnsBottom .summary .item span {
+    text-decoration-color: green;
+}
+
 .header {
-  background-color: orange;
+  background-color: lightyellow;
+  padding-color: orange;
 }
 .container h2, h3 { 
     margin-top: 0;
     padding: 0;
-    color: #000;
+    color: green
     font-size: 14px;
     }
 
@@ -98,6 +134,7 @@ address {
     float: left;
     width: 50%;
 }
+
 
 /* Style for Nav Bar */
 #nav {
