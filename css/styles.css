@@ -7,7 +7,7 @@
             }       
 
         .blogContainer .summary .item img { 
-            width: 100%;
+            width: 100%;''
         }.blogContainer .summary .item h1 {
             text-decoration-color: green
         }
@@ -65,12 +65,16 @@
   box-sizing: border-box;
 }
 
+.jumbotronText-center {
+  float: left;  
+}
+
 .jumbotronText-center .summary .item h1 {
     text-decoration-color: green
    }
 
-.jumbotronText-center .summary{
- background-color: orange;
+.jumbotronText-center .summary .container {
+ color: orange;
 }
 
 /* to test background image on the bottom
@@ -81,6 +85,7 @@
 
 .col-sm-4 .summary  {
 background-color: orange;
+float: left;
 }
 
 .col-sm-4 .summary .item h2 {
@@ -88,7 +93,7 @@ background-color: orange;
 
 }
 
-.columnsBottom .summary {
+.columnsBottom {
     float: left;
 }
 
@@ -132,9 +137,51 @@ address {
 }
 .col {
     float: left;
-    width: 50%;
+    width: 30%;
 }
 
+.clear, .clearfix {
+  overflow: auto;
+}
+.clear::after,
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.floatleft {
+    float: left;
+}
+.floatright {
+    float: right;
+}
+#food .image {
+    width: 33%;
+    margin-right: 1%;
+}
+#food .text {
+    width: 33%;
+}
+#food .image img {
+    display: block;
+    width: 100%;
+}
+#food .col {
+    width: 33%;
+}
+#food .col img {
+    display: block;
+    width: 100%;
+}
+
+#food .mainlist {}
+#food .mainlist li.item {
+    display: inline;
+    vertical-align: top;
+}
+#food .mainlist .sublist {
+    display: inline-block;
+}
 
 /* Style for Nav Bar */
 #nav {
