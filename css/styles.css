@@ -4,22 +4,37 @@
             float: left;
             width: 30%;
             margin-right: 10px;
-           font-family: 'Rochester', cursive;
-           font-weight: 400%;
-           font-size: 14px;
-           text-decoration-color: green; 
-            }       
+            font-size: 12px;
+            color: green; 
+            }   
+
+            /* No change is happening with this class name:
+             .blogContainer .summary .item p {
+               font-family: 'Rochester', cursive;
+               font-size: 24px;
+               text-decoration-color: green; 
+             }
+             */
+
+                        
 
         .blogContainer .summary .item img { 
             width: 100%;
-        }.blogContainer .summary .item h1 {
-            font-family: 'Rochester', cursive;
-           font-weight: 400%;
-           font-size: 14px;
-            text-decoration-color: green
         }
 
+
+        .blogContainer .summary .item li {
+            font-size: 18px;
+        }
+            
         
+
+        /* To call the Blog li list class in a different way:
+        .container .blog li {
+            font-size: 20px;
+        }*/
+
+
         .blogContainer .summary .item {
             position: relative;
         }
@@ -38,11 +53,26 @@
             text-transform: uppercase;
             font-size: 14px;
         }
+        
+        /* To test a different class name for paragraph:
         .blogContainer .summary .lead {
             color: green;
             font-size: 20px;
             font-weight: bold;
         }
+    
+        .blogContainer .summary .item .lead p {
+            font-size: 24px;
+            font-weight: bold;
+            color: green;
+            }
+
+        .blogContainer .summary .blogDetail p {
+            font-size: 24px;
+            color: #000;
+        }
+
+        */
         
         .blogContainer .summary .blogDetail {
         margin-top: 21px;
@@ -52,8 +82,7 @@
         border-top-style: dashed;
         border-top-color: rgb(229, 229, 229);
         font-weight: 600;
-        color: green;
-        font-size: 14px;
+        
     }
 
     body { 
@@ -65,45 +94,52 @@
     background-size: cover;
     margin: 0;
     padding: 0;
-    padding-color:orange;
+    padding-color: orange;
 }
 
 *{
   box-sizing: border-box;
 }
 
-.jumbotronText-center {
+.jumbotrontext-center {
   float: left;  
 }
 
-.jumbotronText-center .summary .item h1 {
-     font-family: 'Rochester', cursive;
-    font-weight: 400%;
-    font-size: 48px;
-    text-decoration-color: green
-   }
-
-.jumbotronText-center .summary .container {
- background-color: orange;
+ .jumbotrontext-center .jumbotronText-center .container {
+ color: orange;
 }
 
+.jumbotrontext-center h1 {
+  font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 78px;
+    color: green; 
+    }
 /* to test background image on the bottom
 .cssbackgroundImages .bottom {
     background-size: cover;
     background-image: url(../img/8-high-protein-vegan-sources.jpg); 
 */
 
-.col-sm-4 .summary  {
-background-color: orange;
-float: left;
-}
-
-.col-sm-4 .summary .item h2 {
-    text-decoration-color: green;
+.col-sm-4 h2 {
+    color: green;
     font-family: 'Rochester', cursive;
     font-weight: 400%;
-    font-size: 14px;
-    text-decoration-color: green
+    font-size: 24px;
+    }
+
+.col-sm-4 {
+    float: left;
+    width: 33%;
+    background-color: h000; 
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.col-sm-4 p {
+   color: #000;
+    font-size: 14px; 
 }
 
 .header {
@@ -134,6 +170,17 @@ address {
     font-size: 14px;
 }
 
+.blog .container h1 {
+  color: green;
+    font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 36px;
+    }
+
+
+.blog .container li {
+    font-size: 18px;
+}
 .row-box {
     position: relative;
     display: inline;
@@ -142,7 +189,7 @@ address {
 }
 .col {
     float: left;
-    width: 30%;
+    width: 33%;
 }
 
 .clear, .clearfix {
@@ -181,17 +228,22 @@ address {
 }
 
 .row {
-    background-color: h000; 
-    display: inline;
-    float: left;
+    background-color: #h000;
+    /* display: inline; */
+    /* float: left; */
 }
 
-.row-container {
-    float: left;
-    width: 6%;
-    background-color: h000; 
-    
-}
+ .col-lg-2 h4 {
+    font-family: 'Rochester', cursive;
+    font-weight: bold;
+    font-size: 24px;
+   color: green;
+ }
+
+ .col-lg-2 li {
+    font-size: 12px;
+ }
+
 
 
 /* Style for Nav Bar */
@@ -213,18 +265,20 @@ address {
     color: green;
 }
 ul.navbar {
-    display: block;
+    display: inline;
     text-align: right;
     margin: 15% 0 0 0;
 }
 .navbar li {
+    font-family: 'Rochester', cursive;
+    font-weight: bold;
+    text-decoration-color: green;
     font-size: 16px;
     display: inline;
     margin-right: 23px;
+    color: green;
 
 }
-
-/*Introduction banner box */
 
 .banner {
     background-color: #009ddc;
@@ -242,8 +296,7 @@ ul.navbar {
     color: #000;
     font-weight: 200;
 }
-
-/* Styling for blog box */
+ 
 
 .blog-content {
     position: relative;
@@ -267,7 +320,7 @@ ul.navbar {
     color: black;
 }
 
-/* Styling for HTML blog table */
+/* Styling for HTML blog table:
 table.table-content { 
     display: table;
     border-collapse: separate;
@@ -280,7 +333,7 @@ table.table-content td {
 }
 table.table-content img {
     width: 100%;
-} 
+}*/
 
 /* Styling for HTML contact box */
 #contact a {
@@ -297,18 +350,39 @@ table.table-content img {
     display: 100%
    }
 
+   ..cssBackgroundImages img {
+    display: 100%;
+    width: 100%;
+   }
+
 .cssBackgroundImages.bgVegetables {
     background-size: cover;
     background-image: url(../img/vegetables.jpg); 
 }
+
+.cssBackgroundImages.bgVegetables img {
+    display: 100%;
+    width: 100%;
+
+}
+
 .cssBackgroundImages.bgVegan {
     background-size: cover;
     background-image: url(../img/veganfruitsalad.jpg);
+}
+.cssBackgroundImages.bgVegan img {
+    display: 100%;
+    width: 100%;
 }
 
 .cssBackgroundImages.vgDish1 {
     background-size: cover;
     background-image: url(../img/vegandish1.jpg);
+}
+
+.cssBackgroundImages.vgDish1 img {
+    display: 100%;
+    width: 100%;
 }
 
 .cssBackgroundImages .container {
@@ -320,21 +394,28 @@ table.table-content img {
     background: rgba(204, 204, 204, 0.5);
     }
 
-.cssBackgroundImages p {
-    color: #000;
-}
 
 .cssBackgroundImages span {
     font-family: 'Rochester', cursive;
     font-weight: 400%;
-    font-size: 78px;
+    font-size: 100px;
     color: white; 
 }
 
-.cssBackgroundImages img {
-    width: 100%;
-    display: 100%;
+.cssBackgroundImages h2 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 48px;
+    color: white;   
 }
+
+.cssBackgroundImages p {
+font-family: 'Rochester', cursive; 
+ font-weight: bold;
+font-size: 24px;
+color: white;   
+}
+
 
 /* Form Formating 
     font-family: 'PT Sans', sans-serif;
@@ -460,6 +541,13 @@ footer {
     margin-top: 5%;
     padding: 5% 0;
     text-align: center;
+}
+
+.footer h2 {
+font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 24px;
+    color: green;   
 }
 footer a,
 footer a:link,

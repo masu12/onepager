@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <title>ONE SITE PAGER</title>
-       <link rel="stylesheet" href="css/styles.css" />
-   </head>
+<head>
+  <meta charset="UTF-8">
+  <meta content="Creating a slideshow" name="description">
+  <meta content="HTML,CSS" name="keywords">
+  <meta content="Maribel Royer" name="author"><!-- Responsive Design tag -->
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Vegan Diet: Home</title>
+  <link href="lightbox/css/lightbox.min.css" rel="stylesheet" type="text/css">
+  <link href="favicon.ico" rel="icon" type="image/x-icon"><!-- External CSS styles -->
+  <link href="css/slick.css" rel="stylesheet" type="text/css"><!-- Add the new slick-theme.css if you want the default styling -->
+  <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lightbox/css/lightbox.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet"><!-- CSS for slideshow -->
+
+
+
+
+
+
+
+  </head>
+
+  <body>
        <!--Health--> 
    <div class="main content">
      <div id="nav" class="clear">
-        <div class="logo-vegan"><img src="img/logo-vegan.png" alt="logo-vegan"></div>
-          
-          <div class="nav-list">
+      <div class="logo-vegan"><a href="index.html"><img src="img/logo-vegan.png" alt="logo-vegan"></a></div>
+        </div>  
+         <!-- To transfer navbar to the vegan-life.html
+         <div class="nav-list">
           <ul class="navbar">   
           <li><a href="#TheVegandiet">Thevegandiet</a></li>
           <li><a href="#Whatisit?">Whatisit?</a></li>
@@ -18,7 +39,7 @@
           <li><a href="#DifferentTypes">Differenttypes</a></li>
         </ul>
     </div>
-    </div> 
+  --> 
 
  <h2>Diet transition</h2>
 <p>I could never imagine myself being vegan. I lived for string cheese, and could never cook without including meat in my daily menu.</p>
@@ -48,8 +69,38 @@
      </div>
     </ul>
   -->
-  
- <body>
+
+  <div class="vegandish-container">
+    <div class="your-class">
+      <div class="vegandish"><img src="img/vegandish16.jpg" alt="vegandish16"></div>
+      <div class="vegandish"><img src="img/vegandish17.jpeg" alt="vegandish17"></div>
+      <div class="vegandish"><img src="img/vegandish18.jpg" alt="vegandish18"></div>
+      <div class="vegandish"><img src="img/juice.jpg" alt="juice"></div>
+      <div class="vegandish"><img src="img/vegandish21.jpg" alt="vegandish21"></div>
+      <div class="vegandish"><img src="img/veganlifestyle.jpg" alt="veganlifestyle"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      
+      /*
+      $('.your-class').slick({
+      setting-name: setting-value
+    });
+    */
+      $('.single').slick();
+      $('.your-class').slick({
+        infinite: true,
+        slideToShow: 3,
+        slideToShow: 3,
+      });
+  });
+</script>
+    <br>
+    <section>
     <article>
     <h2>Mistakes to avoid when going Vegan</h2>
     <p>I started as a vegan after I had tried many treatments for low back pain due to multiple spine injuries. I was adviced to whatch a video by a physical therapist, who advises to do a detox diet to help with back pain. The diet excludes any animal protein and increases greens, vegetables and whole grains to reduce the small intestine's inflamation. He suggested that inflamed digestive organs is one of the main reasons for people to experience more lumbar pain, unless is due to some injuries or other major conditions. He mentions that even if there is a serious problem that causes pain, the inflamed intestines make it worst. I did it for one month as he recomended, and I noticed a big difference; including how my abs turned flat. I ate meat the next day, but my system was already used to live without it and reacted to it by taking all day to digest it. I had been feeling so light and relaxed that I decided to continue with the same diet. It was not imposible to me as I cooked my whole life, specially with fresh ingredients. Then I started watching the documentaries on Netflix—Forks Over Knives, Food Choices, Cowspiracy...too much evidence was presented on the importance of going vegan—not just for us, but for the planet. So just before Thanksgiving two years ago, was when I made a pact: a to myself and after the holiday, my meals have been all plant-based, all the time. Over this time I have never felt “deprived.” <strong>It’s easy to make mistakes when changing your diet or lifestyle:</strong>,but with some simple research, I was able to remedy them all.<br> 
@@ -101,16 +152,25 @@
   </article>
 </section>
 
-<footer>
-  <div class="footer">
-  <div id="contact" class="container">
-  <h6>CONTACT US</h6>
-  <address>1111 Main Ave.<br>New York, NY 10000</address>
-  <p><a href="mailto:someone@domain.com?Subject=The%20Vegan%20Diet">someone@yahoo.com</a><br>
-  <a href="Tel:+1-555-222-8888">+1-555-222-8888</a></p>
-  </div>
+
+ <footer class="footer">
+      <div id="contact" class="container">
+      <h2>CONTACT US</h2>
+      
+      <address>8800 22nd St. Apt.6<br>New York, NY 10019</address>
+      <a href="mailto:someone@domain.com?Subject=The%20Vegan%20Diet">someone1111@yahoo.com</a><br>
+      <a href="Tel:+1-555-222-8888">+1-555-222-8888</a> <a href="https://docs.google.com/forms/d/e/1FAIpQLSewK_o2eauOyiZaOJnQ36MQERSaOUAUKRRyK_nC3bA4ehSeog/viewform?usp=sf_link" target="_blank">To contact Us click here</a>
+    </div>
+    <p>Copyright &copy;&nbsp;2019</p>
+    <p class="socialmedia"><i class="fab fa-facebook"></i></p>
+    <a href="table-2.html">Table 2</a> | <a href="float.html">Float</a> | <a href="embed.html">Embed</a>
+  </footer>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script> 
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript"></script> 
+  <script src="lightbox/js/lightbox.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </div>
-</footer>
-</div>
+ <script src="js/main.js"></script> 
 </body>
 </html>
