@@ -94,15 +94,50 @@
     background-size: cover;
     margin: 0;
     padding: 0;
-    padding-color: orange;
+    padding-color: ;
 }
 
 *{
   box-sizing: border-box;
 }
+.jumbotron .jumbotron-fluid .display-4 p {
+   font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 18px;
+    color: green; 
+}
 
+.jumbotron .jumbotron-fluid .display-4 .lead p {
+font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 32px;
+    color: green; 
+
+}
+
+.jumbotron .jumbotron-fluid .display-4 h1 {
+font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 68px;
+    color: green; 
+}
+
+.jumbotron .jumbotron-fluid .display-4 span {
+font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 78px;
+    color: white; 
+}
+.jumbotron {  
+background-color: transparent;
+}
+
+
+
+/* To test how my jumbotron column color changes:
 .jumbotrontext-center {
   float: left;  
+  background-color: transparent;
 }
 
  .jumbotrontext-center .jumbotronText-center .container {
@@ -115,12 +150,46 @@
     font-size: 78px;
     color: green; 
     }
-/* to test background image on the bottom
+    */
+
+
+  /* To test how my jumbotron would show without the image container attributes:
+  .cssBackgroundImages .bgVegetables  h1 {
+  font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 78px;
+    color: green; 
+}
+
+.cssBackgroundImages .bgVegetables .container {
+    float: left;
+}
+
+.cssBackgroundImages .bgVegetables {
+    float: left;  
+  }*/
+
+
+/* to test background image on the bottom jumbotron:
 .cssbackgroundImages .bottom {
     background-size: cover;
     background-image: url(../img/8-high-protein-vegan-sources.jpg); 
 */
 
+.col-sm h2 {
+  color: white;
+     font-weight: bold;
+    font-size: 24px;  
+}
+
+.col-sm h3 {
+  color: green;
+    font-family: 'Rochester', cursive;
+    font-weight: bold;
+    font-size: 18px;  
+}
+
+/* To replace this columns for the boostrap templatee.html code:
 .col-sm-4 h2 {
     color: green;
     font-family: 'Rochester', cursive;
@@ -131,7 +200,7 @@
 .col-sm-4 {
     float: left;
     width: 33%;
-    background-color: h000; 
+    background-color: orange; 
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -141,10 +210,14 @@
    color: #000;
     font-size: 14px; 
 }
+*/
+
+
+
 
 .header {
   background-color: lightyellow;
-  padding-color: orange;
+  padding-color: ;
 }
 .container h2, h3 { 
     margin-top: 0;
@@ -357,7 +430,8 @@ table.table-content img {
 
 .cssBackgroundImages.bgVegetables {
     background-size: cover;
-    background-image: url(../img/vegetables.jpg); 
+    background-image: url(../img/vegetables.jpg);
+
 }
 
 .cssBackgroundImages.bgVegetables img {

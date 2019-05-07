@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta content="Creating a slideshow" name="description">
   <meta content="HTML,CSS" name="keywords">
   <meta content="Maribel Royer" name="author"><!-- Responsive Design tag -->
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>Vegan Diet: Home</title>
-  <link href="lightbox/css/lightbox.min.css" rel="stylesheet" type="text/css">
-  <link href="favicon.ico" rel="icon" type="image/x-icon"><!-- External CSS styles -->
+  <title>Bootstrap Template</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link href="fontawesome/css/all.css" rel="stylesheet"> 
   <link href="css/slick.css" rel="stylesheet" type="text/css"><!-- Add the new slick-theme.css if you want the default styling -->
   <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="lightbox/css/lightbox.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet"><!-- CSS for slideshow -->
-
+  <link href="lightbox/css/lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
   <!--To test my slideshow styles on my other pages:
   <style type="text/css">
      .slideshow-wrap {
@@ -42,7 +42,10 @@
 <body id="home">
   <div class="main-content">
     <a href="javascript:void(0);" onclick="window.history.back();">Go Back: Function</a>
-    <div class="clear" id="nav">
+      
+
+      <!-- To use the new bootstrap template.html nav code: 
+      <div class="clear" id="nav">
       <div class="logo"><img alt="logo-vegan" src="img/logo-vegan.png"></div>
       <div class="nav-list">
         <ul class="navbar" id="navbarUL">
@@ -60,7 +63,33 @@
           </li>
         </ul>
       </div>
-    </div><!--To test my slideshow on my other pages:
+    </div>
+  -->
+
+<div id="nav-menu" class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html"><img src="img/logo-vegan.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <!--To test my slideshow on my other pages:
 <div class="slideshow-wrap">
     <div class="yummy-food">
       <div><img alt="thumbnail 1" src="img/thumbnail1.jpg"></div>
@@ -71,6 +100,49 @@
       <div><img alt="thumbnail 6" src="img/thumbnail6.jpg"></div>
     </div>
   </div> -->
+
+
+  <div class="image-container">
+      <div class="cssBackgroundImages bgVegetables" id="csscoverbackgroundimage">
+        <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">It's easy to go</h1>
+            <span>Vegan</span><br>
+            <h2>A personal Vegan Lifecoach!</h2>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <p><a href="veganlifecoach.html" target="_blank"><br>
+            Want to go Vegan:click here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="information">
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h2>Get Daily Recipes</h2>
+          <h3>5 Times a day</h3>
+          <p>We share with you quick and easy recipes for every occasion, even for happy birthday,vegan subscription guides, and special guides for holidays.<br>
+          <a href="cookingideas.html" target="_blank">read more</a></p>
+    </div>
+    <div class="col-sm">
+      <h2>Half-hour Discussion</h2>
+          <h3>1 Time a day</h3>
+          <p>We will set long and short term goals and discuss strategies, as well as tips and tricks.<br>
+          <a href="mistakestoavoid.html" target="_blank">read more</a></p>
+    </div>
+    <div class="col-sm">
+      <h2>Nutrition Guide</h2>
+          <h3>How To Be Healthy</h3>
+          <p>A Vegan diet can meet your nutritional needs if you follow my helpful guide.<br>
+          <a href="thevegandiet.html" target="_blank">read more</a></p>
+    </div>
+  </div>
+</div>
+</div>
+
+    <!-- To test the code from my boostrap template.html code above:
     <div class="image-container">
       <div class="cssBackgroundImages bgVegetables" id="csscoverbackgroundimage">
         <div class="container">
@@ -84,6 +156,7 @@
         </div>
       </div>
     </div>
+  -->
     <hr>
     <div class="container" id="blog">
       <h1>Important to know</h1>
@@ -215,6 +288,8 @@
     <div class="cssBackgroundImages bottom" id="csscoverbackgroundimage"> 
     <div class="container"> 
     -->
+    
+    <!-- To replace this jumbotron code for the boostrap template.html one:
     <div class="container-fluid">
       <div class="jumbotron text-center" id="jumbotronText-center">
         <h1>Vegan Lifestyle!</h1>
@@ -245,6 +320,7 @@
         </div>
       </div>
     </div>
+  -->
 
     <div class="slideshow-wrap">
     <div class="yummy-food">
@@ -392,14 +468,21 @@
           <p class="socialmedia"><i class="fab fa-facebook"></i></p><a href="table-2.html">Table 2</a> | <a href="float.html">Float</a> | <a href="embed.html">Embed</a>
         </footer>
       </div>
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+
       <script src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript">
       </script> 
       <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript">
       </script> 
       <script src="lightbox/js/lightbox.min.js">
       </script> 
+      <!-- To test the bootstrap we used on 5-6-19 
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
-      </script> 
+      </script>--> 
       <script src="js/main.js">
       </script> 
       <script type="text/javascript">
