@@ -18,21 +18,33 @@
 
                         
 
-        .blogContainer .summary .item img { 
+        .blogContainer .summary img { 
             width: 100%;
         }
 
 
-        .blogContainer .summary .item li {
+        .blogContainer .summary li {
             font-size: 18px;
         }
+
+        
+.container .blog h1 {
+    font-family: 'Rochester', cursive; 
+            font-weight: bold;
+            font-size: 60px;
+            color: green;   
+}
+
+    
+
+
             
         
 
-        /* To call the Blog li list class in a different way:
+        
         .container .blog li {
             font-size: 20px;
-        }*/
+        }
 
 
         .blogContainer .summary .item {
@@ -54,7 +66,6 @@
             font-size: 14px;
         }
         
-        /* To test a different class name for paragraph:
         .blogContainer .summary .lead {
             color: green;
             font-size: 20px;
@@ -72,8 +83,15 @@
             color: #000;
         }
 
-        */
-        
+        .blogContainer .summary .blogDetail h1 {
+         
+            font-family: 'Rochester', cursive; 
+            font-weight: bold;
+            font-size: 60px;
+            color: green;   
+        }
+
+
         .blogContainer .summary .blogDetail {
         margin-top: 21px;
         padding-top: 21px;
@@ -100,6 +118,373 @@
 *{
   box-sizing: border-box;
 }
+
+.hero-container{
+   background-size: cover;
+    background-image: url(../img/vegetables.jpg);
+  
+}
+
+.hero-container{
+    background-repeat: no-repeat;
+    background-position: top left;
+    /*background-color: #000;
+    padding: 100px;*/ 
+    display: 100%
+   }
+
+   .hero-container img {
+    display: 100%;
+    width: 100%;
+   }
+
+
+
+.hero-container2 {
+    background-size: cover;
+    background-image: url(../img/veganfruitsalad.jpg);
+}
+.hero-container2{
+    background-repeat: no-repeat;
+    background-position: top left;
+    /*background-color: #000;
+    padding: 100px;*/
+    display: 100%
+   }
+
+
+.hero-container2 img {
+    display: 100%;
+    width: 100%;
+
+}
+
+
+.hero-container3 {
+    background-size: cover;
+    background-image: url(../img/vegandish1.jpg);
+}
+
+.hero-container3 img {
+    display: 100%;
+    width: 100%;
+}
+
+.hero-container .container {
+    /*padding: 100px;*/
+    color: #fff;
+    text-align: center; 
+    position: relative;
+    background-color: transparent;
+    /* 
+    background: rgb(204, 204, 204); Fallback for older browsers without RGBA-support
+    background: rgba(204, 204, 204, 0.5); */
+    }
+
+    .hero-container2 .container {
+    /*padding: 100px;*/
+    color: #fff;
+    text-align: center; 
+    position: relative;
+    /*background: rgb(204, 204, 204); Fallback for older browsers without RGBA-support
+    background: rgba(204, 204, 204, 0.5);*/
+    }
+
+.hero-container3 .container {
+    /*padding: 100px;*/
+    color: #fff;
+    text-align: center; 
+    position: relative;
+    /*background: rgb(204, 204, 204); Fallback for older browsers without RGBA-support
+    background: rgba(204, 204, 204, 0.5);*/
+    }
+
+.hero-container span {
+    font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 100px;
+    color: white; 
+}
+
+.hero-container2 span {
+    font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 100px;
+    color: white; 
+}
+
+.hero-container3 span {
+    font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 100px;
+    color: white; 
+}
+ 
+.hero-container h1 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 60px;
+    color: white;   
+}
+
+.hero-container h2 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 48px;
+    color: white;   
+}
+
+.hero-container3 h1 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 60px;
+    color: white;   
+}
+ 
+.hero-container2 h2 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 48px;
+    color: white;   
+}
+
+.hero-container3 h1 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 60px;
+    color: white;   
+}
+
+.hero-container3 h2 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 48px;
+    color: white;   
+}
+
+.hero-container p {
+font-family: 'Rochester', cursive; 
+ font-weight: bold;
+font-size: 24px;
+color: white;   
+}
+
+
+.hero-container2 p {
+font-family: 'Rochester', cursive; 
+ font-weight: bold;
+font-size: 24px;
+color: white;   
+}
+
+
+.hero-container3 p {
+font-family: 'Rochester', cursive; 
+ font-weight: bold;
+font-size: 24px;
+color: white;   
+}
+
+.hero-container4{
+   background-size: cover;
+    background-image: url(../img/Eat-vegan.jpg);
+  
+}
+
+.hero-container4{
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #000;
+    /*padding: 100px;*/ 
+    display: 100%
+   }
+
+   .hero-container4 img {
+    display: 100%;
+    width: 100%;
+   }
+
+   /*.hero-container5 {
+    background-size: cover;
+    background-image: url(../img/healthyeating.jpg);
+}
+.hero-container5{
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #000;
+    /*padding: 100px; 
+    display: 100%
+   }
+
+
+.hero-container5 img {
+    display: 100%;
+    width: 100%;
+
+}*/
+
+ .hero-container4 .container {
+    padding: 100px;
+    color: #fff;
+    text-align: center; 
+    position: relative;
+    /*background: rgb(204, 204, 204); Fallback for older browsers without RGBA-support
+    background: rgba(204, 204, 204, 0.5);*/
+    }
+
+.hero-container4 span {
+    font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 100px;
+    color: orange; 
+}
+
+.hero-container4 h1 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 60px;
+    color: orange;   
+}
+
+.hero-container4 h2 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 48px;
+    color: green;   
+}
+
+
+.hero-container4 a {
+font-family: 'Rochester', cursive; 
+ font-weight: bold;
+font-size: 32px;
+color: green;   
+}
+
+
+
+.hero-container5{
+   background-size: cover;
+    background-image: url(../img/vegan-cooking-instruction.jpg);
+  
+}
+
+.hero-container5{
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #000;
+   /*padding: 100px;*/ 
+    display: 100%
+   }
+
+   .hero-container5 img {
+    display: 100%;
+    width: 100%;
+   }
+
+   .hero-container6 {
+    background-size: cover;
+    background-image: url(../img/person-eating-healthy-salad.jpg);
+}
+.hero-container6{
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #000;
+    /*padding: 100px;*/ 
+    display: 100%
+   }
+
+
+.hero-container6 img {
+    display: 100%;
+    width: 100%;
+
+}
+
+ .hero-container5 .container {
+    /*padding: 100px;*/
+    color: #fff;
+    text-align: center; 
+    position: relative;
+    /*background: rgb(204, 204, 204); Fallback for older browsers without RGBA-support 
+    background: rgba(204, 204, 204, 0.5);*/
+    }
+
+.hero-container5 span {
+    font-family: 'Rochester', cursive;
+    font-weight: 400%;
+    font-size: 100px;
+    color: white; 
+}
+
+.hero-container5 h2 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 48px;
+    color: white;   
+}
+
+.hero-container5 h1 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 60px;
+    color: white;   
+}
+
+
+.hero-container5 p {
+font-family: 'Rochester', cursive; 
+ font-weight: bold;
+font-size: 24px;
+color: white;   
+}
+
+
+.hero-container5 img {
+    display: 100%;
+    width: 100%;
+
+}
+
+ .hero-container6 .container {
+    /*padding: 100px;*/
+    color: #fff;
+    text-align: center; 
+    position: relative;
+    /*background: rgb(204, 204, 204); Fallback for older browsers without RGBA-support 
+    background: rgba(204, 204, 204, 0.5);*/
+    }
+
+.hero-container6 span {
+    font-family: 'Rochester', cursive;
+    font-weight: bold;
+    font-size: 100px;
+    color: orange; 
+}
+
+.hero-container6 h1 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 78px;
+    color: orange;   
+}
+
+.hero-container6 h2 {
+ font-family: 'Rochester', cursive; 
+ font-weight: bold;
+    font-size: 60px;
+    color: orange;   
+}
+
+
+.hero-container6 p {
+font-family: 'Rochester', cursive; 
+ font-weight: bold;
+font-size: 48px;
+color: white;   
+}
+
+
 .jumbotron .jumbotron-fluid .display-4 p {
    font-family: 'Rochester', cursive;
     font-weight: 400%;
@@ -131,6 +516,9 @@ font-family: 'Rochester', cursive;
 .jumbotron {  
 background-color: transparent;
 }
+
+
+
 
 
 
@@ -243,15 +631,19 @@ address {
     font-size: 14px;
 }
 
-.blog .container h1 {
-  color: green;
-    font-family: 'Rochester', cursive;
+.container .vegan-blog h1 {
+  font-family: 'Rochester', cursive;
     font-weight: 400%;
-    font-size: 36px;
+    font-size: 78px;
+    color: green; 
     }
 
 
-.blog .container li {
+.container .mistakes-blog img {
+    position: center
+
+}
+.container .blog li {
     font-size: 18px;
 }
 .row-box {
@@ -342,7 +734,9 @@ ul.navbar {
     text-align: right;
     margin: 15% 0 0 0;
 }
-.navbar li {
+
+
+.col-lg-6 .col-md-12 li {
     font-family: 'Rochester', cursive;
     font-weight: bold;
     text-decoration-color: green;
@@ -350,6 +744,10 @@ ul.navbar {
     display: inline;
     margin-right: 23px;
     color: green;
+
+}
+
+.container .vegan-blog h1{
 
 }
 
@@ -623,6 +1021,12 @@ font-family: 'Rochester', cursive;
     font-size: 24px;
     color: green;   
 }
+
+footer .social-media a {
+    font-size: 20px;
+    color: black;
+    padding-right: 1%;
+    }
 footer a,
 footer a:link,
 footer a:visited,
@@ -679,14 +1083,14 @@ transition: color 12s, font-size 12s;
 @media (min-width: 576px) {
 .container, .container-fluid {
     
-    background-color: red;}
+    background-color: none;}
 }
 /*
 // Medium devices (tablets, 768px and up)
 */
 @media (min-width: 768px) {
     .container, .container-fluid {
-        background-color: yellow;
+        background-color: none;
     }
 
 }
@@ -695,7 +1099,7 @@ transition: color 12s, font-size 12s;
 */
 @media (min-width: 992px) {
     .container, .container-fluid {
-        background-color: green;
+        background-color: none;
     }
 
 }
@@ -705,7 +1109,7 @@ transition: color 12s, font-size 12s;
 */
 @media (min-width: 1200px) {
     .container, .container-fluid {
-        background-color: orange;
+        background-color: none;
     }
 
 }
